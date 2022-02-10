@@ -1,0 +1,12 @@
+LOCAL_PATH:= $(call my-dir)
+include $(CLEAR_VARS)
+
+LOCAL_SRC_FILES := splitimg.c
+
+LOCAL_C_INCLUDES := $(LOCAL_PATH)
+
+LOCAL_MODULE := splitimg
+LOCAL_MODULE_PATH := $(HOST_OUT_EXECUTABLES)
+
+include $(BUILD_HOST_EXECUTABLE)
+
